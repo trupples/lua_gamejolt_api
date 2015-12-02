@@ -5,15 +5,15 @@ Overview
 ---
 
 This library requires the following libraries in order to work:
-* [kikito's md5](github.com/kikito/md5.lua)
+* [kikito's md5](http://github.com/kikito/md5.lua)
 * [Jeffrey Friedl's json](http://regex.info/blog/lua/json)
 * lua socket (Should come with lua. Is included in love +0.5.0)
 
 Usage:
 ```lua
-	local gamejolt = require("gamejolt_api")
+local gamejolt = require("gamejolt_api")
 
-	-- do stuff here
+-- do stuff here
 ```
 
 See [the gamejolt api documentation](http://gamejolt.com/api/doc/game)
