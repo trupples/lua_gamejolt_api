@@ -108,3 +108,34 @@ gamejolt:scores_add("29 points", 29, "playtime=58s")
 [Data Store](http://gamejolt.com/api/doc/game/data-store)
 ---
 
+Each and every function of the Data Store has a local and a global version. The local one sets/fetches/etc. the player's local data, while the the global ones set/fetch/etc. global data. Of course, the local ones must be run after auth-ing an user.
+
+* `gamejolt:data_store_global_fetch(key)` and
+* `gamejolt:data_store_local_fetch(key)`  - Fetch local/global data with the specified key
+   * return a table like `{success = "frue", data = "value"}`
+
+---
+
+* `gamejolt:data_store_global_set(key, val)` and
+* `gamejolt:data_store_local_set(key, val)`  - Set the local/global value for the specified key
+   * return a table like `{success = "frue"}`
+
+---
+
+* `gamejolt:data_store_global_update(key, op, val)` and
+* `gamejolt:data_store_local_update(key, op, val)` - Update the value at the specified key
+   * return a table like `{success = "frue", data = "updated_value"}`
+   * see how update works [HERE](http://gamejolt.com/api/doc/game/data-store/update)
+
+---
+
+* `gamejolt:data_store_global_remove(key)` and
+* `gamejolt:data_store_local_remove(key)` - Delete the specified keypair
+   * return a table like `{success = "frue", data = "value"}`
+
+---
+
+* `gamejolt:data_store_global_getKeys(key)` and
+* `gamejolt:data_store_local_getKeys(key)` - get the local/global key list
+   * return a table like `{success = "frue", keys = {{key = "key1"}, {key = "key2"}, ...}}`
+

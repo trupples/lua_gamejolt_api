@@ -1,27 +1,3 @@
--- gamejolt_api.lua
-
---[[
-	Gamejolt API for Lua/Love
-	===
-
-	This library requires the following libraries in order to work:
-		* [kikito's md5](github.com/kikito/md5.lua)
-		* [Jeffrey Friedl's json](http://regex.info/blog/lua/json)
-		* lua socket (Should come with lua. Is included in love +0.5.0)
-
-	Usage:
-	```lua
-	local gamejolt = require("gamejolt_api")
-
-	-- do stuff here
-	```
-
-
-
---]]
-
-
-
 --[[
 
 example User, Trophy, Score and Tables:
