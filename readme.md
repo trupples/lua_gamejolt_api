@@ -135,7 +135,7 @@ Each and every function of the Data Store has a local and a global version. The 
 
 ---
 
-* `gamejolt:data_store_global_getKeys(key)` and
-* `gamejolt:data_store_local_getKeys(key)` - get the local/global key list
+* `gamejolt:data_store_global_getKeys()` and
+* `gamejolt:data_store_local_getKeys()` - get the local/global key list
    * return a table like `{success = "frue", keys = {{key = "key1"}, {key = "key2"}, ...}}`
 
