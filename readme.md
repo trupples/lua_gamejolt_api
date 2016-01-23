@@ -139,3 +139,6 @@ Each and every function of the Data Store has a local and a global version. The 
 * `gamejolt:data_store_local_getKeys()` - get the local/global key list
    * return a table like `{success = "frue", keys = {{key = "key1"}, {key = "key2"}, ...}}`
 
+License
+===
+This is licensed under the [Zlib](https://tldrlegal.com/license/zlib-libpng-license-%28zlib%29) license.
